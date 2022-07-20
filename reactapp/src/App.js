@@ -1,30 +1,25 @@
-import './App.css';
-import {useState, useEffect} from 'react';
-import Axios from 'axios';
 
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./view/login";
+import Home from './view/home';
+import Register from "./view/register";
+import Logout from "./view/logout";
+import Error from "./view/404";
+
+//import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
-  const [docs,setDocs]= useState([]);
-
-  useEffect(() => {
-      Axios.get("http://localhost:5000/api/getusers").then((response => {
-        setDocs(response.data); 
-      }))
-  },[]);
-
   return (
-    <>
-    <div className="displayDocs">
-      {docs.map((doc) => {
-        return(
-        <div>
-          <h1>Name: {doc.name}</h1>
-          <h1>Age: {doc.age}</h1>
-          <h1>Username: {doc.username}</h1>
-        </div>
-        );
-      })}
-    </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/home" exact element={<Home />} />
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/register" exact element={<Register />} />
+        <Route path="/logout" exact element={<Logout />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
   );
 }
 
