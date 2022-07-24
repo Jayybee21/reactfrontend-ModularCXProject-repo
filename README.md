@@ -11,8 +11,21 @@ show who is the author of the blogs on the homepage
 ![register](https://user-images.githubusercontent.com/104642512/180589702-3040a436-0c24-4945-8701-e3e24c3da1f3.png)
 
 #Languages and technologies in use:
--Javascript
--HTML
--CSS
--React.js
--Axios
+- Javascript
+- HTML
+- CSS
+- React.js
+- React-router-dom
+- Axios
+
+# Running the project
+After downloading the project, open command prompt or powershell
+and open the reactapp repository, after this run the command npm start
+the project should run the React application on the port 3000.
+All the pages and components of the project displayed on the web browser
+are located inside the view folder of the reactapp folder.
+The project's css design is located inside the style folder in the reactapp folder
+
+
+
+Project created by Jad Beydoun
