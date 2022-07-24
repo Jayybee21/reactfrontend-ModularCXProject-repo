@@ -10,7 +10,7 @@ show who is the author of the blogs on the homepage
 ![modify](https://user-images.githubusercontent.com/104642512/180589698-f8206460-6624-4349-b4ee-e51906b625cf.png)
 ![register](https://user-images.githubusercontent.com/104642512/180589702-3040a436-0c24-4945-8701-e3e24c3da1f3.png)
 
-#Languages and technologies in use:
+# Languages and technologies in use:
 - Javascript
 - HTML
 - CSS
